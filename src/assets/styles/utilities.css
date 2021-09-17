@@ -1,0 +1,38 @@
+.spacer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.wave-separator {
+  background-image: url('/layout/wave_separator.svg');
+}
+
+.inverted-wave-separator {
+  background-image: url('/layout/inverted_wave_separator.svg');
+}
+
+.frosted-glass {
+  background: rgba(100, 100, 100, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+@layer utilities {
+  .marker-underline {
+    background-size: 100% 0.3em;
+    background-position: 0 90%;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    position: 'absolute';
+    @apply bg-gradient-to-r from-emerald to-emerald bg-no-repeat transition-all;
+  }
+  .marker-underline:hover {
+    background-size: 100% 40%;
+  }
+  .marker-underline:focus {
+    background-size: 100% 40%;
+  }
+}

@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './utilities.css';
+
+@font-face {
+  font-family: IBMPlexSans;
+  font-display: swap;
+  src: url('../fonts/IBMPlexSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IBMPlexSansBold;
+  font-display: swap;
+  src: url('../fonts/IBMPlexSans-Bold.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 27px;
+
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
